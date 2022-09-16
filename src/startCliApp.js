@@ -4,9 +4,13 @@ import commandLineUsage from "command-line-usage";
 
 function startCliApp(startAppWithConfig, options = {}) {
 	const cliOptions = [
-		...options.cliOptions,
+		...(
+			Array.isArray(options.cliOptions)
+			? options.cliOptions
+			: []
+		),
 		{name: "help", alias: "h", description: "Display this help", type: Boolean}
-	]
+	];
 
 	const config = {
 		...configFromDefaults(cliOptions), // lowest priority: defaults

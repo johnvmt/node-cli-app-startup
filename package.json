@@ -1,6 +1,6 @@
 {
   "name": "cli-app-startup",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gathers app configuration from CLI or ENV vars and passes them to function",
   "repository": {
     "type": "git",
