@@ -1,0 +1,22 @@
+{
+  "name": "cli-app-startup",
+  "version": "0.0.1",
+  "description": "Gathers app configuration from CLI or ENV vars and passes them to function",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnvmt/node-cli-app-startup"
+  },
+  "author": {
+    "name": "John Murphy-Teixidor",
+    "email": "johnvmt@gmail.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "main": "src/startCliApp.js",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^6.1.3",
+    "dotenv": "^16.0.1"
+  }
+}
